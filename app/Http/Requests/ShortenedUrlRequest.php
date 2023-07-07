@@ -22,7 +22,7 @@ class ShortenedUrlRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'original_url' => 'required|url'
+            'original_url' => 'required|url|active_url'
         ];
     }
 
@@ -34,8 +34,9 @@ class ShortenedUrlRequest extends FormRequest
     public function messages(): array
     {
         return [
-            'original_url.required' => 'Original Url is required.',
-            'original_url.url'      => 'Please enter a valid url.'
+            'original_url.required'     => 'Original Url is required.',
+            'original_url.url'          => 'Please enter a valid url.',
+            'original_url.active_url'   => 'Please enter an active url.',
         ];
     }
 }

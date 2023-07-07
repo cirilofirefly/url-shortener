@@ -23,12 +23,15 @@ const copyLinkOnClipboard = async (url) => {
         <div class="border-blue-500 border-2 border-dashed rounded-md p-2">
             <div class="flex justify-between px-4 my-[1rem]">
                 <p class="font-bold uppercase tracking-wide text-xl">Generated Url</p>
-                <button @click="copyLinkOnClipboard(generatedShortenedUrl.href)" title="Copy on clipboard" class="text-xl">
+                <button @click="copyLinkOnClipboard(generatedShortenedUrl.href)" title="Copy on clipboard"
+                    class="text-xl hover:text-blue-400">
                     <i class='fas' :class="!isLinkCopied ? 'fa-clipboard' : 'fa-clipboard-check text-green-400'"></i>
                 </button>
             </div>
             <div class="p-4 text-center">
-                <a class="underline" :href="generatedShortenedUrl.href" target="_blank">{{ generatedShortenedUrl.href }}</a>
+                <a class="underline hover:text-blue-400" :href="generatedShortenedUrl.href" target="_blank">
+                    {{ generatedShortenedUrl.href }}
+                </a>
             </div>
         </div>
     </div>

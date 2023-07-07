@@ -13,7 +13,7 @@ const generatedShortenedUrl = (url) => {
 </script>
 <template>
     <div class="w-[40rem] shadow p-10 rounded-lg flex flex-col items-center justify-center">
-        <h1 class="font-bold text-3xl text-center text-blue-800">Url Shortener</h1>
+        <h1 class="font-bold text-3xl text-center text-blue-800"><i class="fas fa-link"></i> Url Shortener</h1>
         <CreateUrlShortener @on-generated-shortened-url="generatedShortenedUrl($event)" />
         <GeneratedLinkUrlShortener :generatedShortenedUrl="shortenedUrl" />
     </div>

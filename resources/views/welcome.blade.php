@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel</title>
+    <title>{{ config('app.name') }}</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -21,9 +21,9 @@
     <div id="app"></div>
     <footer class="absolute bottom-10">
         <div class="text-[3rem] flex items-center justify-center space-x-4 mb-10">
-            <i class="fab fa-laravel"></i>
+            <a href="https://laravel.com" target="_blank"><i class="fab fa-laravel"></i></a>
             <span class="text-xl">+</span>
-            <i class="fab fa-vuejs"></i>
+            <a href="https://vuejs.org" target="_blank"><i class="fab fa-vuejs"></i></a>
         </div>
         Developed by <a class="underline text-blue-500" target="_blank"
             href="https://github.com/cirilofirefly">@cirilofirefly</a>
